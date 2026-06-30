@@ -24,3 +24,23 @@ img {
   justify-content: center;
   background: #eee;
 }
+
+/*My CSS below*/
+.container {
+  display: flex;
+  flex-direction: column;
+  margin: 0 auto;
+  text-align: center;
+}
+.heading {
+  margin-bottom: 32px;
+}
+.mainsection {
+  display: flex;
+  justify-content: center;
+  gap: 52px;
+}
+
+.item {
+  max-width: 200px;
+}
