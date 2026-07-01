@@ -4,26 +4,92 @@ body {
   min-height: 100vh;
 }
 
+/*Header Section*/
+h1 {
+  font-size: 32px;
+}
 .header {
   height: 72px;
   background: darkmagenta;
   color: white;
+  font-size: 32px;
+  font-weight: 900;
+  display: flex;
+  align-items: center;
+  padding-left: 16px;
+}
+/*Main section*/
+.main > * {
+  border: 1px solid red;
+}
+.main {
+  display: flex;
+
 }
 
 .footer {
   height: 72px;
   background: #eee;
   color: darkmagenta;
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  width: 100vw;
+  display:flex;
+  justify-content: center;
+  align-items: center;
 }
-
+/*Sidebar*/
 .sidebar {
-  width: 300px;
+  min-width: 300px;
   background: royalblue;
+  padding-left: 16px;
   box-sizing: border-box;
+  flex-shrink: 0;
+  height: 100vh;
 }
 
-.card {
+.sidebar ul {
+  list-style: none;
+  padding-left: 0;
+  text-decoration: none;
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+
+
+a {
+  text-decoration: none;
+  color: white;
+  font-size: 24px;
+}
+
+/*Cards*/
+
+.cardcontainer {
+  flex-grow: 1;
+  gap: 48px;
+  display: flex;
+  gap: 8px;
+  flex-wrap: wrap;
+  padding: 48px;
+}
+.card {:
   border: 1px solid #eee;
   box-shadow: 2px 4px 16px rgba(0,0,0,.06);
   border-radius: 4px;
+  flex-basis: 300px;
+  padding: 16px;
+  max-height: 300px;
+}
+
+.sitecontent{
+  display: flex;
+  flex-direction: column;
+  border: 2px solid red;
+}
+
+.sitecontent .footer {
+  margin-top 0;
 }
